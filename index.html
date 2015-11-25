@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0,width=device-width,maximum-scale=1,minimum-scale=1,user-scalable=no" /><meta name="apple-mobile-web-app-capable" content="yes" />
+<title>Project and Page Title Here</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<!--[if lt IE 9]> 
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"> </script> 
+<![endif]--> 
+</head>
+
+<body>
+<canvas width="800" height="600" id="myCanvas">
+    Sorry,your browser does not support the canvas tag.
+    
+</canvas>
+    <script> 
+            var myCanvas = document.getElementById("myCanvas");
+            var ctx = myCanvas.getContext("2d");
+            //fillRect(starting_x, starting_y, width, height)
+            ctx.fillRect(30,10,100,50);
+            ctx.strokeStyle='#006699';
+            ctx.lineWidth=3;
+            ctx.strokeRect(30,10,100,50);
+        
+        //start a line
+        ctx.beginPath();
+        //MoveTo is like lifting your pen and moving it without making a line
+        ctx.moveTo(240,80);
+        //lineTo makes the pen, but makes a line to the new coordinate
+        ctx.lineTo(300,20);
+        ctx.lineTo(200,40);
+        //draw an arc(center-x, center-y, radius)
+        ctx.arc(100,75,50,0,1*Math.PI);
+        //to get the stroke to appear
+        
+        ctx.stroke();
+ </script>
+</body>
+</html>
+

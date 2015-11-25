@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* begin with styles for mobile: */
+
+
+
+
+
+
+
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+
+
+/* CSS to be used when screen is between 721 and 960 px wide */
+@media screen and (min-width:721px) and (max-width:960px) {
+
+}
